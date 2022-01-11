@@ -24,9 +24,7 @@ interface userType {
     email:string
 }
 
-function getEndpoint(path:string) {
-  return ; // finish implementing this
-}
+
 const TableData = () => {
 
     const [user , setUser] = useState<userType[]>([])
@@ -64,7 +62,7 @@ const TableData = () => {
     return (
       <>
      
-        <div style={{ height: 400, width: '100%' }}>
+        <div style={{ height: 700, width: '100%' }}>
           <DataGrid
             rows={user}
             columns={columns}
